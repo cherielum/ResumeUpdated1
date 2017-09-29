@@ -1,0 +1,254 @@
+#firstDiv {
+    background: #3b3b3b ;
+
+}
+.nav {
+    height: 60px;
+    /*background-color: 0005;*/
+    position: fixed;
+    right: 10 px;
+    padding: 10px; 
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.0);
+    transition: background-color 2s;
+}
+
+.nav ul li: hover {
+    background-color: #000000;
+}
+
+header .logo {
+    /*background: url(logo4.png) 100% no-repeat;*/
+/*    border: 2px solid black;*/
+    position: fixed;
+    left: 10px;
+    top: 8px;
+    opacity: .9%;
+    z-index: 50;
+
+
+}
+
+.nav-link {
+    color: white;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.headerImage{
+    height: 700px;
+    position: relative;
+    margin: 0;
+    background: url(Header1.jpg) 60% no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    z-index: 1
+
+}
+.headingTxt {
+    width: 90%;
+    top: 20%;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    z-index: 2
+}
+.headingContent h1 {
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+
+}
+.headingContent p {
+    top: 10%;
+    font-size: 24px;
+    text-align: center;
+}
+
+/*for quote*/
+.quote {
+    background-color: #292929 ;
+    font-size: 24px;
+    font-family: serif;
+    padding: 70px;
+}
+.quote p {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+}
+
+.categories {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.quote2 {
+    background-color: #292929 ;
+    font-size: 24px;
+    font-family: serif;
+    padding: 70px;
+}
+.quote2 p {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+}
+
+.the-button {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border-radius:20px;
+    height: 50px;
+    width: 100px;
+    font-family: sans-serif;
+
+}
+
+#aboutAnchor {
+    font-family: sans-serif;
+    color: #4d4d4d;
+    font-weight: 500;
+     font-size: 55px;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.aboutDiv {
+    padding: 70px;
+}
+
+.aboutMePhoto {
+    margin-top: 10px;
+    margin-left: 35px;
+}
+
+
+#projectsAnchor {
+    text-align: center;
+    font-size: 55px;
+    font-family: sans-serif;
+    color: #4d4d4d;
+    font-weight: 500;
+}
+
+#projectsDiv {
+    padding-top: 70px;
+
+}
+
+.wrapper { 
+        background:#EFEFEF; 
+        box-shadow: 1px 1px 10px #999; 
+        margin: auto; 
+        text-align: center; 
+        position: relative;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        margin-bottom: 20px !important;
+        width: 800px;
+        padding-top: 30px;
+    }
+    .scrolls { 
+        overflow-x: scroll;
+        overflow-y: hidden;
+        height: 100;
+    white-space:nowrap
+    } 
+    .imageDiv img { 
+        box-shadow: 1px 1px 10px #999; 
+        margin: 2px;
+        max-height: 60px;
+        cursor: pointer;
+        display:inline-block;
+        vertical-align:top;
+    }
+
+#contactAnchor {
+    text-align: center;
+    font-size: 55px;
+    font-family: sans-serif;
+    color: #4d4d4d;
+    font-weight: 500;
+}
+
+/*.map {
+    width: 1000%;
+    height: 400px;
+    background-color: gray;
+        }*/
+
+/*.contactImage{
+    height: 700px;
+    margin: 0;
+    background: url(contactImage.jpg) no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+*/
+
+
+
+
+#firstParagraph {
+    font-family: sans-serif;
+    color: #4d4d4d;
+    margin-right: 35px;
+}
+
+#secondParagraph {
+    font-family: sans-serif;
+    color: #4d4d4d;
+    position: relative;
+}
+
+#thirdParagraph {
+    font-family: sans-serif;
+    color: #4d4d4d;
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#thirdDiv {
+    padding: 70px;
+    z-index: 50px;
+}
+
+
+/*TESTING*/
+.lightBG {
+    background: #f6f6f6;
+}
+
+.socialMedia img {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+/*  
+    z-index: 2 //added*/
+
+}
+
+.socialMedia {
+    background-color: #292929 ;
+    text-align: center;
+    padding: 70px;
+
+/*
+    z-index: 2 //added*/
+
+
+}
