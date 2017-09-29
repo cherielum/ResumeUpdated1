@@ -11,6 +11,13 @@ $(document).ready(function () {
    			$(".nav").css("background-color", "rgba(0,0,0,0");
 		}
 	});
+
+    $(".contactImage").hover(function(){
+    $(this).css("background-color", "rgba(59, 59, 59,0.8");
+    }, function(){
+    $(this).css("background-color", "background-color", "rgba(0,0,0,0");
+});
+
 })
 
   
