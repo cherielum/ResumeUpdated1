@@ -1,21 +1,24 @@
 #firstDiv {
     background: #3b3b3b ;
+    font-family: "Open Sans";
 
 }
 .nav {
+    font-family: "Open Sans";
     height: 60px;
     /*background-color: 0005;*/
     position: fixed;
     right: 10 px;
     padding: 10px; 
     width: 100%;
-    z-index: 2;
+    z-index: 10;
     background-color: rgba(0, 0, 0, 0.0);
     transition: background-color 2s;
+    
 }
 
-.nav ul li: hover {
-    background-color: #000000;
+.nav ul li:hover {
+    background-color: rgba(65, 65, 65, 1);
 }
 
 header .logo {
@@ -40,6 +43,16 @@ header .logo {
     padding: 0;
 }
 
+#skills img {
+    height: 50px;
+    text-align: center;
+    margin: 35px;
+}
+
+#skills {
+    background-color: white ;
+}
+
 .headerImage{
     height: 700px;
     position: relative;
@@ -53,23 +66,38 @@ header .logo {
 
 }
 .headingTxt {
-    width: 90%;
-    top: 20%;
+    margin-left: 15%;
+    top: 40%;
     position: absolute;
     text-align: center;
     color: #fff;
-    z-index: 2
+    z-index: 2;
 }
 .headingContent h1 {
     font-size: 80px;
     font-weight: bold;
     text-align: center;
+    animation: fadein 1s;
+/*    font-family: "Open Sans";*/
 
 }
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
 .headingContent p {
     top: 10%;
     font-size: 24px;
     text-align: center;
+    animation: fadein 1.5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0; }
 }
 
 /*for quote*/
@@ -92,10 +120,21 @@ header .logo {
     background-size: cover;
 }
 
+#skills {
+    background-color: #292929 ;
+    text-align: center;
+}
+/*.skills p {
+    font-size: 55px;
+    color: #fff;
+    text-align: center;
+
+}*/
+
 .quote2 {
     background-color: #292929 ;
     font-size: 24px;
-    font-family: serif;
+    font-family: serif; 
     padding: 70px;
 }
 .quote2 p {
@@ -111,33 +150,30 @@ header .logo {
     border-radius:20px;
     height: 50px;
     width: 100px;
-    font-family: sans-serif;
-
+    animation: fadein 2s;
 }
 
 #aboutAnchor {
-    font-family: sans-serif;
     color: #4d4d4d;
     font-weight: 500;
-     font-size: 55px;
+    font-size: 55px;
     text-align: left;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .aboutDiv {
     padding: 70px;
+    background-color: #f6f6f6;
 }
 
 .aboutMePhoto {
-    margin-top: 10px;
-    margin-left: 35px;
+    margin-top: 15%;
+    margin-left: 10px;    
 }
-
 
 #projectsAnchor {
     text-align: center;
     font-size: 55px;
-    font-family: sans-serif;
     color: #4d4d4d;
     font-weight: 500;
     padding-bottom: 40px;
@@ -178,19 +214,17 @@ header .logo {
 
 
 #firstParagraph {
-    font-family: sans-serif;
     color: #4d4d4d;
     margin-right: 35px;
+    margin-left: 80px;
 }
 
 #secondParagraph {
-    font-family: sans-serif;
     color: #4d4d4d;
     position: relative;
 }
 
 #thirdParagraph {
-    font-family: sans-serif;
     color: #fff;
     position: relative;
     text-align: center;
@@ -203,24 +237,96 @@ header .logo {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 400px;
-    padding-top: 70px;
+    height: 500px;
+   /* padding-top: 70px;*/
     z-index: 1;
 }
 
-/*.contactImage: hover {
-    opacity: 0.5;
-}*/
+.contactImage:hover > .contactImageGray {
+    width:100%;
+    height:500px;
+    position:absolute;
+    background-color: rgba(0,0,0,0.1);
+    transition: opacity 0.05s; 
+}
+
+.contactImageGray {
+   background-color: rgba(0, 0, 0, 0);
+   width: 100%;
+   height: 500px;
+   
+}
+/*
+.contactImageGray {
+    vertical-align: middle;
+    transition: opacity 2s; 
+    -webkit- transition: opacity:1s;
+} */
+
+#skills img {
+    text-align: center;
+}
+
+   
+  input[type=text], select, input[type=email], textarea{
+    
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+    margin-top: 40px;
+  }
+
+  input[type=text]  {
+      width: 46%;
+      height: 50px;
+      margin-right: 2%;
+     
+  }
+
+  input[type=email] {
+      
+      width: 46%;
+      height: 50px;
+     
+  }
+
+  textarea{
+      width: 95%;
+      margin: auto;
+      height: 100px;
+      margin-top: 20px; 
+  }
+
+
+.button_1{
+    height: 48px; 
+    background: #292929; 
+    border: 0; /*takes out natural borders*/
+	padding: 1em;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    /* transition: background-color 2s ease-out; */
+    display: flex; 
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    width: 100px;
+}
+
 
 #contactAnchor {
     text-align: center;
     font-size: 55px;
-    font-family: sans-serif;
     color: #fff;
     font-weight: 500;
-    padding-top: 30px;
+    padding-top: 100px;
     z-index: 2;
 }
+
+
 
 #thirdDiv {
     width: 100%;
@@ -228,6 +334,16 @@ header .logo {
     text-align: center;
     color: #fff;
     z-index: 5
+}
+
+span.projectTitles {
+    margin-top: 300px;
+    position: absolute;
+}
+
+.scrolls img {
+    margin-right: 70px;
+    margin-top: 50px;
 }
 
 
@@ -258,8 +374,20 @@ header .logo {
     text-align: center;
     z-index: 2;
     border: none;
+    /*transition: all 0.5s;*/
+    cursor: pointer;
 }
 
-.the-arrow: hover {
-    padding-top:25px;
+
+.the-arrow {
+   display: inline-block;
+    padding-top: 14px;
+    transition: all .125s ease;
+    font-size: 2em;
+    color: black;
+    text-decoration: none;
+    color: white;
+}
+.the-arrow:hover {
+  transform: translateY(-3px);
 }
